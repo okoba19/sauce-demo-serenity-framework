@@ -27,6 +27,7 @@ public class LoginDefinitions {
 
     @When("I enter {string} in the Password input field on the login page")
     public void enterPassword(String password) {
+        loginSteps.waitForLoginPageLoading();
         loginSteps.enterPassword(password);
     }
 

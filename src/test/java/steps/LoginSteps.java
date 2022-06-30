@@ -11,6 +11,8 @@ import pages.LoginPage;
 
 public class LoginSteps extends ScenarioSteps {
 
+    private WebDriver driver;
+
     @Page
     private LoginPage loginPage;
 
@@ -21,6 +23,7 @@ public class LoginSteps extends ScenarioSteps {
 
     public void enterUsername(String username){
         loginPage.getUsernameLoginInputField().sendKeys(username);
+        waitFor(50000);
     }
 
     public void enterPassword(String password){

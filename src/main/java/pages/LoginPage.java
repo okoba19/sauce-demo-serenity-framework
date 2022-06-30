@@ -17,7 +17,7 @@ public class LoginPage extends CommonPage {
     @FindBy (xpath = "//input[contains(@class, 'form_input') and @placeholder='Username']")
     private WebElementFacade usernameLoginInputField;
 
-    @FindBy (xpath = "//input[contains(@class, 'form_input') and @placeholder='%s']")
+    @FindBy (xpath = "//input[contains(@class, 'form_input') and @placeholder='Password']")
     private WebElementFacade passwordLoginInputField;
 
 }
