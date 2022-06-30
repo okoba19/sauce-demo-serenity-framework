@@ -3,6 +3,7 @@ package steps;
 import java.time.Duration;
 
 import org.fluentlenium.core.annotation.Page;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import net.thucydides.core.steps.ScenarioSteps;

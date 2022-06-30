@@ -1,7 +1,5 @@
 package definitions;
 
-import org.fluentlenium.core.annotation.Page;
-
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import net.thucydides.core.annotations.Steps;

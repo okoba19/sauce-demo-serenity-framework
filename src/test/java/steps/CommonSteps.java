@@ -1,15 +1,17 @@
 package steps;
 
 import org.fluentlenium.core.annotation.Page;
+import org.openqa.selenium.WebDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import net.thucydides.core.annotations.Step;
-import net.thucydides.core.annotations.Steps;
 import net.thucydides.core.steps.ScenarioSteps;
 import pages.CommonPage;
 
 public class CommonSteps extends ScenarioSteps {
     private final String BASE_URL = "https://www.saucedemo.com/";
+
+    private WebDriver driver;
 
     @Page
     private CommonPage commonPage;
