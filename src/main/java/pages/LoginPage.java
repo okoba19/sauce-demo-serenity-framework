@@ -11,13 +11,13 @@ public class LoginPage extends CommonPage {
     @FindBy(xpath = "//div[@class='login_logo']")
     private WebElementFacade mainContent;
 
-    @FindBy(xpath = "//input[@type='submit']")
+    @FindBy(xpath = "//input[@id='login-button']")
     private WebElementFacade loginButton;
 
-    @FindBy (xpath = "//input[contains(@class, 'form_input') and @placeholder='Username']")
+    @FindBy (xpath = "//input[@id='user-name']")
     private WebElementFacade usernameLoginInputField;
 
-    @FindBy (xpath = "//input[contains(@class, 'form_input') and @placeholder='Password']")
+    @FindBy (xpath = "//input[@id='password']")
     private WebElementFacade passwordLoginInputField;
 
 }
