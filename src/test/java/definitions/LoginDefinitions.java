@@ -1,11 +1,14 @@
 package definitions;
 
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
+import lombok.extern.slf4j.Slf4j;
 import net.thucydides.core.annotations.Steps;
 import steps.CommonSteps;
 import steps.LoginSteps;
 
+@Slf4j
 public class LoginDefinitions {
 
     @Steps
@@ -29,6 +32,7 @@ public class LoginDefinitions {
     public void enterPassword(String password) {
         loginSteps.waitForLoginPageLoading();
         loginSteps.enterPassword(password);
+        log.info(password);
     }
 
     @When("I click on the Login button on the login page")

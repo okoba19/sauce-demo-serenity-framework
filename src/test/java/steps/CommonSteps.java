@@ -3,7 +3,6 @@ package steps;
 import org.fluentlenium.core.annotation.Page;
 import org.openqa.selenium.WebDriver;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import net.thucydides.core.annotations.Step;
 import net.thucydides.core.steps.ScenarioSteps;
 import pages.CommonPage;
@@ -17,7 +16,6 @@ public class CommonSteps extends ScenarioSteps {
     private CommonPage commonPage;
 
     public void openBrowser() {
-        WebDriverManager.chromedriver().setup();
         getDriver().manage().deleteAllCookies();
         getDriver().manage().window().maximize();
     }
